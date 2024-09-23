@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) { // argc is the argument count and argv is a v
       
       // strcmp returns 0 if the strings are equal
       if(!strcmp(argv[2], "i")) { // Iterative implementation of fibonacci
-         __uint128_t current_number = 1; // __uint128_t can hold up to 18446744073709551615
+         __uint128_t current_number = 1; // __uint128_t can hold up to 340,282,366,920,938,463,463,374,607,431,768,211,455
          __uint128_t prev_number = 0;
          __uint128_t prev_prev_number = 0;
 
@@ -36,14 +36,14 @@ int main(int argc, char* argv[]) { // argc is the argument count and argv is a v
          } // END else
          
 
-         // printf("The answer is %lu\n", current_number);
-         printf("%lu", current_number);
+         // printf("The answer is %llu\n", current_number);
+         printf("%llu", current_number);
       } // END if(argv[2] == 'i')
       else if(!strcmp(argv[2], "r")) { // Recursive implementation of fibonacci
          __uint128_t fibonacci_answer = fibRecursion(fib_counter);
 
-         // printf("The answer is %lu\n", fibonacci_answer);
-         printf("%lu", fibonacci_answer);
+         // printf("The answer is %llu\n", fibonacci_answer);
+         printf("%llu", fibonacci_answer);
       } // END else else if(argv[2] == 'r')
       else {
          printf("[-] Invalid argument...Must pass in either 'i' or 'r'\n");
