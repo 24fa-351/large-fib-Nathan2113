@@ -2,8 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int fibRecursion(int number);
-int fib_mem(int number);
+__uint64_t fibRecursion(int number);
 long int fib_table[300];
 
 // For this program, argv[0] is fib, argv[1] is the integer we are calculating the fibonacci for, argv[2] is the method, and argv[3] is the file
@@ -56,7 +55,7 @@ int main(int argc, char* argv[]) { // argc is the argument count and argv is a v
 }
 
 // Recursive implementation of fibonacci
-int fibRecursion(int number) {
+__uint64_t fibRecursion(int number) {
    // This is the original implementation of fibonacci using recursion
    if(number == 0) {
       return 0;
