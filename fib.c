@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 __uint64_t fibRecursion(int number);
-long int fib_table[300];
+long int fib_table[100];
 
 // For this program, argv[0] is fib, argv[1] is the integer we are calculating the fibonacci for, argv[2] is the method, and argv[3] is the file
    // The methods include: 'r' for recursion, and 'i' for iterative
